@@ -1,4 +1,4 @@
-# Netflix Clone UI with React JS
+# Searching Username Github with React JS
 
 This project was bootstrapped with [Create React App](https://github.com/galihfr/search-users-repositories.git).
 
