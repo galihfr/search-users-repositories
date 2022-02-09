@@ -1,0 +1,20 @@
+.btn{
+    padding: 10px 30px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    
+    &.btn-primary{
+        background-color: $red-60;
+        color: #fff;
+
+        &:hover{
+            transition: .4s ease;
+            background-color: $red-40;
+        }
+    }
+}

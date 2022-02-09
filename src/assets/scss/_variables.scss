@@ -1,0 +1,76 @@
+$media-query: 
+  (
+    fourk,
+    (
+      min-width: 2560px,
+    )
+  ),
+  (
+    twok,
+    (
+        min-width: 1920px,
+      )
+  ),
+  (
+    wide,
+    (
+      min-width: 1441px,
+    )
+  ),
+  (
+    laptop,
+    (
+        min-width: 1024px,
+      )
+      and
+      (
+        max-width: 1199px,
+      )
+  ),
+  (
+    tablet,
+    (
+        min-width: 768px,
+      )
+      and
+      (
+        max-width: 991px,
+      )
+  ),
+  (
+    mobile,
+    (
+      max-width: 767px,
+    )
+  ),
+  (
+    small-mobile,
+    (
+      max-width: 360px,
+    )
+  );
+
+$black-80: #252528;
+$black-60: #58585b;
+$black-50: #939597;
+$black-40: #bbbdc0;
+$black-20: #eeeeef;
+$black-10: #f8f8f8;
+
+$blue-80: #234976;
+$blue-60: #5170F5;
+
+$red-60: #CC4D3D;
+$red-40: #E94F3B;
+
+$pink-80: #D0021B;
+$pink-60: #FF566B;
+$pink-40: #FF6F81;
+
+$bg-primary: #ebf2f9;
+
+$purple-60: #260f91;
+$purple-40: #e1d9fa;
+$purple-20: #EFEBFC;
+
+$white: #fff;

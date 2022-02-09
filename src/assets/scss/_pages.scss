@@ -1,0 +1,248 @@
+.home-page{
+    background-color: $bg-primary;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    overflow: hidden;
+    padding: 0 298px;
+
+    @include breakpoint(tablet){
+        padding: 0 150px;
+    }
+
+    @include breakpoint(mobile){
+        padding: 24px 16px 40px 16px;
+    }
+}
+
+.logo{
+    &-title{        
+        background-color: $blue-80;
+        background-image: url(../images/ilustration-header.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right 40px bottom -55px;        
+        padding-top: 100px;      
+        height: 200px;  
+
+        @include breakpoint(mobile){
+            margin-top: 0;
+        }
+
+        &-icon{
+            display: flex;
+            justify-content: center;
+
+            img{
+                width: 22%;
+                object-fit: cover;
+
+                @include breakpoint(mobile){
+                    width: 65%;
+                }
+            }
+        }
+    }
+}
+
+.form-search{
+    &-container{               
+        margin-top: 32px;
+        background-color: $white;
+        border-radius: 16px;
+        display: flex;
+        height: 50px;
+        overflow: hidden;
+        border-radius: 20px;        
+        padding: 16px;
+
+        button{
+            width: 20%;
+            @include breakpoint(mobile){
+                width: 30%;
+            }
+        }
+    }
+    &-input{        
+        width: 80%;    
+        border-color: transparent;   
+        font-size: 16px;
+        line-height: 16px;        
+        
+        &:focus{
+            border-color: transparent;
+            outline: transparent;
+        }
+    }
+}
+
+.main-content{
+    min-height: calc(100vh - 20rem);   
+    padding-bottom: 32px; 
+}
+
+.repo{
+    &-container{
+        margin-top: 48px;        
+    }
+    &-title{
+        color: $black-80;
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+}
+
+.card-profile{
+    background-color: $white;
+    border-radius: 24px;
+    padding: 32px;
+
+    &-container{
+        display: flex;
+        flex-direction: row;                     
+    }
+
+    &-left{            
+        border-radius: 6px;
+        border: 1px solid $black-20;
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+        margin-right: 24px;
+
+        @include breakpoint(mobile){
+            width: 120px;
+            height: 120px;
+            margin-right: 16px;
+        }
+
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-name{
+        font-size: 24px;
+        font-weight: bold;
+        color: $black-80;
+        margin-top: 0;
+        margin-bottom: 16px;
+
+        @include breakpoint(mobile){
+            font-size: 18px;
+        }
+    }
+
+    &-desc{        
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    &-user-name{        
+        margin: 0;
+        font-size: 14px;
+        font-weight: 600;
+        color: $black-60;
+        margin-right: 12px;
+    }
+
+    &-location{        
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500;
+        color: $black-60;
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &-bio{
+        margin: 0;
+        font-weight: 500;
+        font-size: 12px;
+        color: $black-50;
+    }
+}
+
+.card-repo-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+
+    @include breakpoint(mobile){
+        grid-template-columns: repeat(2, 1fr);        
+    }
+}
+
+.card-repo{
+    background-color: $white;
+    border-radius: 18px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:hover{
+        transform: translateY(-5px);
+        transition: .4s ease;       
+        box-shadow: 0px 5px 80px -19px rgba(0, 0, 0, 0.07);
+    }
+
+    &-name{
+        color: $black-60;
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    &-link{
+        background-color: $purple-20;
+        color: $purple-60;
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: 600;
+        border-radius: 8px;
+        padding: 10px 14px;
+        text-align: center;
+
+        &:hover{
+            transition: .4s ease;
+            background-color: $purple-40;
+        }
+    }
+}
+
+.mt-48{
+    margin-top: 48px;
+}
+
+.card-no-result{
+    margin-top: 48px;
+    background-color: $white;
+    border-radius: 18px;
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 50%;
+    }
+
+    p{
+        font-size: 24px;
+        margin-bottom: 0;
+
+        @include breakpoint(mobile){
+            font-size: 16px;
+        }
+    }
+}
